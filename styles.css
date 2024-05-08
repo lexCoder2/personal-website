@@ -17,14 +17,22 @@ body {
 
 
 body>#theme-checkbox:checked ~ .section {
-  --primary-color: rgb(226, 89, 89);
+  --primary-color: rgb(160, 77, 77);
   --bg-color: #444;
   --fg-color: #fefefe;
   --bg-secondary-color: #777;
 
 }
-
+.not-select {
+  -webkit-user-select: none;
+  -ms-user-select: none; 
+  -moz-user-select: none;
+  user-select: none; 
+}
 /* Header Styles */
+
+
+
 .header {
   color: var(--fg-color);
   background-color: var(--bg-color);
@@ -111,21 +119,20 @@ body>#theme-checkbox:checked ~ .section {
 }
 
 
-#theme-checkbox:checked + .header .slider {
+#theme-checkbox:checked ~ .header .slider {
   background-color: rgb(84, 84, 129);
   box-shadow: inset 0 0 10px rgb(30, 22, 51);
 }
-#theme-checkbox:checked + .header .slider .thumb {
+#theme-checkbox:checked ~ .header .slider .thumb {
   transform: translateX(var(--icon-theme));
 }
 
-#theme-checkbox:checked + .header .slider .moon-icon {
+#theme-checkbox:checked ~ .header .slider .moon-icon {
 opacity: 1;
 }
-
 .slider .moon-icon {
-opacity: 0;
-transition: opacity .2s;
+  opacity: 0;
+  transition: opacity .2s;
 }
 .slider .moon-icon::after {
   content: "";
@@ -138,7 +145,7 @@ transition: opacity .2s;
 
 }
 
-#theme-checkbox:checked + .header .slider .sun-icon {
+#theme-checkbox:checked ~ .header .slider .sun-icon {
 opacity: 0;
 }
 
@@ -160,23 +167,38 @@ transition: opacity .2s;
 .lang> span {
   margin: 0 4px;
 }
-.lang input {
+.lang-input {
   display: none;
 }
-.lang input + label {
+.lang-input ~ .header .lang label {
   padding: 5px;
   cursor: pointer;
   border-radius: 5px;
 }
-.lang input + label:hover {
+.lang-input ~ .header .lang label:hover {
  background-color: var(--bg-secondary-color); 
-
 }
-.lang input:checked + label {
-  color: red;
-  
+#english:checked ~ .header .lang #lang-en {
+  color: var(--primary-color);
+  font-weight: bold;
 }
 
+#spanish:checked ~ .header .lang #lang-es {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+body *[lang] {
+  display: none;
+}
+#spanish:checked ~ .section *[lang="es"] {
+  display: inline-block;
+}
+body *[lang="es"] {
+  display: none;
+}
+#english:checked ~ .section *[lang="en"] {
+  display: inline-block;
+}
 /* Hero Section Styles */
 .hero {
   background-color: var(--bg-color);
