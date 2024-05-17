@@ -1,1 +1,1 @@
-// I will try to not write any JS code
+// there is no JS code
