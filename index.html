@@ -1,185 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      lang="en"
-      content="personal website, where I explain my skills as software developer, with technologies as Javascript, HTML, CSS, Angular and react"
-    />
-    <title>
-      Irwin Alejandro Rodriguez Ramirez - Software Full Stack Developer
-    </title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" />
-    <script async defer src="./index.js"></script>
-  </head>
 
-  <body>
-    <input type="checkbox" name="theme" id="theme-checkbox" />
-    <input type="radio" checked class="lang-input" name="lang" id="english" />
-    <input type="radio" class="lang-input" name="lang" id="spanish" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" lang="en"
+    content="personal website, where I explain my skills as software developer, with technologies as Javascript, HTML, CSS, Angular and react" />
+  <link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
+  <title>
+    Irwin Alejandro Rodriguez Ramirez - Software Full Stack Developer
+  </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Gothic&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script async defer src="./index.js"></script>
+</head>
 
-    <header class="header section">
-      
+<body>
+  <input type="checkbox" name="theme" id="theme-checkbox" />
+  <input type="radio" checked class="lang-input" name="lang" id="english" />
+  <input type="radio" class="lang-input" name="lang" id="spanish" />
+
+  <header class="header section">
+
     <button class="dropdown">
       <span class="menu"></span>
     </button>
     <nav>
       <h1><a href="#"><img src="./Vector.svg" alt="logo, lexCoder"></a></h1>
-        <ul class="page-nav">
-          <li>
-            <a href="#about">
-              <span lang="en">About Me</span>
-              <span lang="es">Acerca de mi</span>
-            </a>
-          </li>
-          <li>
-            <a href="#work-experience">
-              <span lang="en"> Experience</span>
-              <span lang="es">Experiencia</span>
-            </a>
-          </li>
-          <li>
-            <a href="#education">
-              <span lang="en"> Education</span>
-              <span lang="es"> Educacion</span>
-            </a>
-          </li>
-          <li>
-            <a href="#skills">
-              <span lang="en"> skills</span>
-              <span lang="es"> Habilidades</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <ul class="page-nav">
+        <li>
+          <a href="#about">
+            <span lang="en">About Me</span>
+            <span lang="es">Acerca de mi</span>
+          </a>
+        </li>
+        <li>
+          <a href="#work-experience">
+            <span lang="en"> Experience</span>
+            <span lang="es">Experiencia</span>
+          </a>
+        </li>
+        <li>
+          <a href="#education">
+            <span lang="en"> Education</span>
+            <span lang="es"> Educacion</span>
+          </a>
+        </li>
+        <li>
+          <a href="#skills">
+            <span lang="en"> skills</span>
+            <span lang="es"> Habilidades</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-        <div id="theme-container">
-          <label for="theme-checkbox" class="switch">
-            <span class="slider">
-              <div class="imgcontainer">
-                <img
-                  src="icons/night.png"
-                  alt="night theme imgcontainer"
-                  class="night moon-icon"
-                />
-              </div>
-              <div class="thumb">
-                <img
-                  src="icons/moon.png"
-                  alt="moon theme imgcontainer"
-                  class="moon-icon"
-                />
-                <div
-                  
-                  class="sun-icon"
-                ></div>
-              </div>
-            </span>
-          </label>
-        </div>
-        <div class="lang not-select">
-          <div class="en">
-            <label for="english" id="lang-en">EN</label>
+    <div id="theme-container">
+      <label for="theme-checkbox" class="switch">
+        <span class="slider">
+          <div class="imgcontainer">
+
           </div>
-          <span class="lang-separator">|</span>
-          <div class="es">
-            <label for="spanish" id="lang-es">ES</label>
+          <div class="thumb">
+            <div class="moon-icon"></div>
+            <div class="sun-icon"></div>
           </div>
-        </div>
-    </header>
-    <main class="section">
-      <section id="hero" class="hero">
-       
-        <figure>
-            <img src="./image.png" alt="Portrait of Alex Rodriguez" >
-           
-        </figure>
-         <article class="hero-description">
+        </span>
+      </label>
+    </div>
+    <div class="lang not-select">
+      <div class="en">
+        <label for="english" id="lang-en">EN</label>
+      </div>
+      <span class="lang-separator">|</span>
+      <div class="es">
+        <label for="spanish" id="lang-es">ES</label>
+      </div>
+    </div>
+  </header>
+  <aside class="main-aside">
+
+    <div class="section-todo">
+
+    </div>
+    <div class="decor"></div>
+  </aside>
+  <main class="section">
+    <section id="hero" class="hero">
+      <h2 class="txt-background">
+        <span lang="en">HELLO</span>
+        <span lang="es">HOLA</span>
+      </h2>
+      <figure>
+        <img src="./image.png" alt="Portrait of Alex Rodriguez">
+
+      </figure>
+      <article class="hero-description">
 
         <h2>
-          <span lang="en">Hello! I am</span>
-          <span lang="es">Hola! soy</span>
+          <span lang="en">I'M</span>
+          <span lang="es">SOY</span>
         </h2>
         <h1 class="hero-name">
-            <svg width="266" height="102" viewBox="0 0 266 102" fill="none" class="svg-name">
-                <path
-                    d="M83.8935 92.448L79.6695 88.736L91.0615 92.064V100H55.4775V92.064L67.3815 88.992L65.8455 91.296L60.0855 73.376L62.6455 75.424H27.0615L29.1095 73.504L22.9655 91.04L22.4535 89.376L33.5895 92.064V100H0.821533V92.064L11.8295 88.864L8.24553 92.064L38.8375 10.4L54.8375 9.88799L83.8935 92.448ZM31.1575 66.592L30.0055 64.416H59.9575L58.4215 66.976L43.9575 18.72L47.5415 18.848L31.1575 66.592Z"
-                fill="currentColor" />
-                <path
-                    d="M117.565 90.784L116.285 89.376L126.653 92.064V100H93.2445V92.064L103.485 89.376L102.205 90.784V10.912L103.357 12.192L93.2445 9.632V1.696L117.565 0.671997V90.784Z"
-                    fill="currentColor" />
-                <path
-                    d="M164.138 101.408C158.164 101.408 152.874 100.128 148.266 97.568C143.658 94.9227 140.074 91.04 137.514 85.92C134.954 80.8 133.674 74.528 133.674 67.104C133.674 59.5093 134.996 52.9813 137.642 47.52C140.372 42.0587 144.17 37.8773 149.034 34.976C153.983 31.9893 159.828 30.496 166.57 30.496C172.97 30.496 178.175 31.8187 182.186 34.464C186.282 37.024 189.311 40.5653 191.274 45.088C193.236 49.6107 194.218 54.7307 194.218 60.448C194.218 61.728 194.175 63.008 194.09 64.288C194.004 65.568 193.834 66.976 193.578 68.512H145.962V58.784H180.138L178.346 59.936C178.431 56.5227 178.047 53.4507 177.194 50.72C176.426 47.9893 175.06 45.8133 173.098 44.192C171.135 42.5707 168.532 41.76 165.29 41.76C161.62 41.76 158.591 42.784 156.202 44.832C153.898 46.88 152.191 49.6533 151.082 53.152C150.058 56.6507 149.546 60.6187 149.546 65.056C149.546 69.92 150.186 74.2293 151.466 77.984C152.746 81.6533 154.751 84.5547 157.482 86.688C160.212 88.8213 163.668 89.888 167.85 89.888C170.836 89.888 174.079 89.3333 177.578 88.224C181.076 87.1147 184.703 85.408 188.458 83.104L193.706 91.424C188.842 94.752 183.892 97.2693 178.858 98.976C173.823 100.597 168.916 101.408 164.138 101.408Z"
-                    fill="currentColor" />
-                <path
-                    d="M196.593 100V92.064L207.345 89.76L203.505 91.936L223.857 63.52L227.313 63.008L247.921 32.416L264.433 31.392V39.328L253.553 42.016L258.033 39.456L238.321 66.464L234.993 66.848L213.105 100H196.593ZM233.713 100V92.064L242.417 90.528L241.521 92.576L224.753 68.64L204.017 39.584L207.217 42.272L198.129 40.352V32.416L228.337 31.392V39.328L219.377 41.248L220.529 38.816L235.505 60.576L258.161 91.936L255.345 89.76L265.841 92.064V100H233.713Z"
-                    fill="currentColor" />
-            </svg>
-
+          ALEX
         </h1>
         <p lang="en">
-          I'm Irwin, a software full stack developer with over 6 years of
-          experience in building web applications, REST APIs, and hybrid mobile
+          I'm a software full stack developer with
+          experience in web applications, REST APIs, and hybrid mobile
           applications.
         </p>
         <p lang="es">
-          Un desarrollador Full Stack con mas de 6 anios de experiencia
+          Un desarrollador Full Stack con experiencia
           construyendo aplicaciones web, APIs REST y aplicaciones hibridas.
         </p>
-        <a href="#" class="btn-contact" >
+        <div class="btn-actions">
+
+          <a href="#" class="btn-contact">
             <span lang="en">Contact me</span>
             <span lang="es">Contactame</span>
-             
-        </a>
-      
-        </article>
-      </section>
+          </a>
+          <a target="_blank" href="./AlejandroRodriguezResume.pdf" class="btn-contact btn-resume">
+            <svg class="btn-icon-external" viewBox="0 0 20 24" width="20px" height="20px">
+              <path fill="currentColor"
+                d="M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 12 L 19 12 L 19 19 L 5 19 L 5 5 L 12 5 L 12 3 L 5 3 z M 14 3 L 14 5 L 17.585938 5 L 8.2929688 14.292969 L 9.7070312 15.707031 L 19 6.4140625 L 19 10 L 21 10 L 21 3 L 14 3 z" />
+            </svg>
+            <span lang="en">My Resume</span>
+            <span lang="es">Curriculum</span>
+          </a>
 
-      <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>TODO.</p>
-      </section>
+        </div>
+      </article>
+    </section>
 
-      <section id="education" class="education">
-        <h2>Education</h2>
-        <p>
-          Instituto Politécnico Nacional, Escuela Superior de Ingeniería
-          Mecánica y Eléctrica - Electronic and Communications Engineering
-          (Software Speciality)
-        </p>
-      </section>
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>TODO.</p>
+    </section>
 
-      <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>
-            Framworks: Angular (Advanced), NodeJS (Advanced), MongoDB
-            (Advanced), React, VueJS, Laravel
-          </li>
-          <li>
-            Languages: JavaScript (Advanced), TypeScript (Advanced), Python,
-            Java, HTML (Advanced), CSS (Advanced), PHP, SQL
-          </li>
-          <li>
-            Tools: Firebase, NPM, API REST, Git, Docker, Webpack, AWS (Lambda,
-            S3, EC2, API Gateway), CI/CD, SASS, Jasmine, Redis, Mocha, Jenkins,
-            Sentry, Jira, SCRUM, Kanban
-          </li>
-        </ul>
-      </section>
+    <section id="education" class="education">
+      <h2>Education</h2>
+      <p>
+        Instituto Politécnico Nacional, Escuela Superior de Ingeniería
+        Mecánica y Eléctrica - Electronic and Communications Engineering
+        (Software Speciality)
+      </p>
+    </section>
 
-      <section id="contact" class="contact">
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>
+          Framworks: Angular (Advanced), NodeJS (Advanced), MongoDB
+          (Advanced), React, VueJS, Laravel
+        </li>
+        <li>
+          Languages: JavaScript (Advanced), TypeScript (Advanced), Python,
+          Java, HTML (Advanced), CSS (Advanced), PHP, SQL
+        </li>
+        <li>
+          Tools: Firebase, NPM, API REST, Git, Docker, Webpack, AWS (Lambda,
+          S3, EC2, API Gateway), CI/CD, SASS, Jasmine, Redis, Mocha, Jenkins,
+          Sentry, Jira, SCRUM, Kanban
+        </li>
+      </ul>
+    </section>
 
-      </section>
-      
-    </main>
-    <footer class="footer">
-        <p>&copy; 2023 Irwin Alejandro Rodriguez Ramirez.</p>
-    </footer>
-  </body>
+    <section id="contact" class="contact">
+
+    </section>
+
+  </main>
+  <footer class="footer">
+    <p>&copy; 2023 Irwin Alejandro Rodriguez Ramirez.</p>
+  </footer>
+</body>
+
 </html>
