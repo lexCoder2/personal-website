@@ -16,7 +16,8 @@ body {
    --primary-color: rgb(226, 89, 89);
    --secondary-color: #57BAD0;
   --bg-color: #fefefe;
-  --fg-color: #444;
+  --fg-color: #666666;
+  --fg-color-hover: #9c6b6b;
   --bg-secondary-color: #ddd;
   --img-shadow-color-1: rgb(169, 223, 245);
   --img-shadow-color-2: rgb(108, 157, 180);
@@ -27,6 +28,9 @@ body>#theme-checkbox:checked ~ .section {
   --primary-color: rgb(160, 77, 77);
   --bg-color: #444;
   --fg-color: #fefefe;
+
+  --fg-color-hover: #e2bbbb;
+  --bg-secondary-color: #ddd;
   --bg-secondary-color: #777;
   transition: background-color .5s;
 
@@ -110,7 +114,7 @@ header::before {
   color: #b37676;
 }
 .page-nav li:hover a{
-  color: #868686;
+  color: var(--fg-color-hover)
 }
 .page-nav li a {
   padding: 0 20px;
@@ -365,7 +369,7 @@ main {
   flex-direction: row-reverse;
   align-items: center;
   background-color: var(--bg-color);
-  padding: 30px 70px;
+  padding: 130px 70px 0 100px;
   height: 100vh;
   justify-content: space-evenly;
   text-align: left;
@@ -374,13 +378,15 @@ main {
 
 .hero .txt-background {
   position: absolute;
-  top: 0;
+  top: 40px;
   left: 0;
-  font-size: 300px;
+  font-size: 22em;
+  font-weight: 800;
   color: #ebebeb;
   padding: 40px 10vw;
   z-index: 0;
 }
+
 .hero h2 {
   font-size: 7em;
   color: var(--primary-color);
@@ -415,7 +421,8 @@ main {
   display: block;
   border: 1px solid #333;
   text-align: center;
-  padding: 5px 25px;
+  padding: 10px 25px;
+  border-radius: 5px;
   background-color: #fff;
   max-width: 40ch;
 }
@@ -456,9 +463,9 @@ main {
   background-color: #f8f8f8;
 }
 body>#theme-checkbox:checked ~ .section .hero figure::after {
-  width: 100%;
-  height: 150%;
-  color: #000;
+  width: 90%;
+  height: 130%;
+  background: #ddd;
 }
 
 
